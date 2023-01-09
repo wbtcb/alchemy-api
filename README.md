@@ -20,3 +20,15 @@ Maven dependencies:
 	    <artifactId>alchemy-api</artifactId>
 	    <version>version</version>
 	</dependency>
+	
+Gradle depencies:
+
+	allprojects {
+		repositories {
+			maven { url 'https://jitpack.io' }
+		}
+	}
+    
+	dependencies {
+	        implementation 'com.github.wbtcb:xwallet-client:$version'
+	}
