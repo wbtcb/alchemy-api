@@ -38,7 +38,7 @@ To get a Alchemy API into your build add:
 	    <version>version</version>
 	</dependency>
 	
-## Gradle depencies:
+## Gradle dependencies:
 
 	allprojects {
 		repositories {
