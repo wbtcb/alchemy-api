@@ -2,10 +2,10 @@
 
 Kotlin Alchemy API is an interface to the Alchemy API.
 
-Usage:
+#Usage:
 
 To access Alchemy's API you will need to register for an API Key.
-
+```
 @Configuration
 class AlchemyClientConfig(
         @Value("\${alchemy.api.key}")
@@ -20,10 +20,10 @@ class AlchemyClientConfig(
         return AlchemyClient(alchemyApiKey)
     }
 }
-
+```
 To get a Alchemy API into your build add:
 
-Maven dependencies:
+#Maven dependencies:
 
 	<repositories>
 		<repository>
@@ -38,7 +38,7 @@ Maven dependencies:
 	    <version>version</version>
 	</dependency>
 	
-Gradle depencies:
+#Gradle depencies:
 
 	allprojects {
 		repositories {
