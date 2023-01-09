@@ -2,7 +2,7 @@
 
 Kotlin Alchemy API is an interface to the Alchemy API.
 
-# Usage:
+## Usage:
 
 To access Alchemy's API you will need to  [register](https://auth.alchemy.com/signup) for an API Key.
 ```
@@ -23,7 +23,7 @@ class AlchemyClientConfig(
 ```
 To get a Alchemy API into your build add:
 
-# Maven dependencies:
+## Maven dependencies:
 
 	<repositories>
 		<repository>
@@ -38,7 +38,7 @@ To get a Alchemy API into your build add:
 	    <version>version</version>
 	</dependency>
 	
-# Gradle depencies:
+## Gradle depencies:
 
 	allprojects {
 		repositories {
