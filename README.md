@@ -2,7 +2,24 @@
 
 Kotlin Alchemy API is an interface to the Alchemy API.
 
+Usage:
+
 To access Alchemy's API you will need to register for an API Key.
+
+@Configuration
+class AlchemyClientConfig(
+        @Value("\${alchemy.api.key}")
+        private val alchemyApiKey: String
+) {
+
+    private val logger = LoggerFactory.getLogger(javaClass)
+
+    @Bean
+    fun alchemyClient(): AlchemyClient {
+        logger.info("Creating alchemy api client")
+        return AlchemyClient(alchemyApiKey)
+    }
+}
 
 To get a Alchemy API into your build add:
 
