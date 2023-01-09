@@ -30,5 +30,5 @@ Gradle depencies:
 	}
     
 	dependencies {
-	        implementation 'com.github.wbtcb:xwallet-client:$version'
+	        implementation 'com.github.wbtcb:alchemy-api:$version'
 	}
