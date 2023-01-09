@@ -8,7 +8,7 @@ To get a Alchemy API into your build add:
 
 Maven dependencies:
 
-<repositories>
+	<repositories>
 		<repository>
 		    <id>jitpack.io</id>
 		    <url>https://jitpack.io</url>
