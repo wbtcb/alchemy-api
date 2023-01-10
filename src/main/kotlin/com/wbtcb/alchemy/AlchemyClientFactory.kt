@@ -1,4 +1,4 @@
-package eu.einvent.alchemy.api
+package com.wbtcb.alchemy
 
 import com.google.gson.GsonBuilder
 import com.wbtcb.alchemy.service.AlchemyService
@@ -22,12 +22,6 @@ object AlchemyClientFactory {
             proxy = Proxy(Proxy.Type.HTTP, InetSocketAddress(proxyHost, proxyPort))
         }
 
-        /* Disable recaptcha log
-        val log = HttpLoggingInterceptor().apply {
-            level = HttpLoggingInterceptor.Level.BODY
-        }
-        */
-
         val client = OkHttpClient().newBuilder()
                 .proxy(proxy)
                 .addNetworkInterceptor { chain ->
@@ -37,7 +31,6 @@ object AlchemyClientFactory {
                             .build()
                             .let(chain::proceed)
                 }
-                // .addInterceptor(log)
                 .build()
 
         return Retrofit.Builder()

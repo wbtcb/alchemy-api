@@ -1,4 +1,4 @@
-package eu.einvent.alchemy.api.service
+package com.wbtcb.alchemy.service
 
 import com.google.gson.JsonArray
 import com.wbtcb.alchemy.dto.AlchemyBlockDetailResultResponse

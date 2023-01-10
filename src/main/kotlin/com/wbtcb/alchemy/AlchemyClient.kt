@@ -1,4 +1,4 @@
-package eu.einvent.alchemy.api
+package com.wbtcb.alchemy
 
 import com.wbtcb.alchemy.service.AlchemyService
 
