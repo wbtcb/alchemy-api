@@ -13,7 +13,7 @@ data class AlchemyParamRequest (
     val toBlock: String?,
 
     @SerializedName("fromAddress")
-    val fromAddress: String,
+    val fromAddress: String?,
 
     @SerializedName("toAddress")
     val toAddress: String,
