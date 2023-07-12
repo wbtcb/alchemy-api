@@ -10,7 +10,7 @@ data class AlchemyResponse<T> (
     val jsonrpc: String = "2.0",
 
     @SerializedName("id")
-    val id: String?,
+    val id: String? = null,
 
     @SerializedName("result")
     val result: T?
