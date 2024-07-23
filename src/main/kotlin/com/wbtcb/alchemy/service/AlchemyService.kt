@@ -6,6 +6,7 @@ import com.wbtcb.alchemy.dto.AlchemyParamRequest
 import com.wbtcb.alchemy.dto.AlchemyRequest
 import com.wbtcb.alchemy.dto.AlchemyResponse
 import com.wbtcb.alchemy.dto.AlchemyResultResponse
+import com.wbtcb.alchemy.dto.AlchemyTransactionDetailResultResponse
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.POST
@@ -21,5 +22,8 @@ interface AlchemyService {
 
     @POST("/v2/{secret}")
     fun getBlockDetailByNumber(@Path("secret") secret: String, @Body request: AlchemyRequest<JsonArray>): Call<AlchemyResponse<AlchemyBlockDetailResultResponse>>
+
+    @POST("/v2/{secret}")
+    fun getTransactionByHash(@Path("secret") secret: String, @Body request: AlchemyRequest<List<String>>): Call<AlchemyResponse<AlchemyTransactionDetailResultResponse>>
 
 }
